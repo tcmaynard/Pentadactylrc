@@ -2,5 +2,7 @@
 
 loadplugins '\.(js|penta)$'
 group user
+map -count -modes=n,v j <count><C-d>
+map -count -modes=n,v k <count><C-u>
 
 " vim: set ft=pentadactyl:
