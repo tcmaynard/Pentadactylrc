@@ -6,7 +6,7 @@ map -count -modes=n,v j <count><C-d>
 map -count -modes=n,v k <count><C-u>
 map -modes=n,v <C-y> -ex :y buffer.title + "\n" + buffer.URL
 map J <down>
-map Y <up>
+map K <up>
 set hintkeys=aioegslntv
 set hlfind
 " vim: set ft=pentadactyl:
