@@ -4,5 +4,6 @@ loadplugins '\.(js|penta)$'
 group user
 map -count -modes=n,v j <count><C-d>
 map -count -modes=n,v k <count><C-u>
+map -modes=n,v <C-y> -ex :y buffer.title + "\n" + buffer.URL
 
 " vim: set ft=pentadactyl:
