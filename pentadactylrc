@@ -8,4 +8,5 @@ map -modes=n,v <C-y> -ex :y buffer.title + "\n" + buffer.URL
 map J <down>
 map Y <up>
 set hintkeys=aioegslntv
+set hlfind
 " vim: set ft=pentadactyl:
