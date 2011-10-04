@@ -9,4 +9,6 @@ map J <down>
 map K <up>
 set hintkeys=aioegslntv
 set hlfind
+" open multiple pages in background tabs
+map <c-f> g;b
 " vim: set ft=pentadactyl:
