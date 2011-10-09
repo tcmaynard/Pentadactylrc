@@ -11,4 +11,6 @@ set hintkeys=aioegslntv
 set hlfind
 " open multiple hints in background tabs
 map <c-f> g;b
+" note space in the end.
+map <c-t> :tabopen! 
 " vim: set ft=pentadactyl:
