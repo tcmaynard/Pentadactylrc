@@ -1,16 +1,15 @@
-"hg6479
+"hg6720
 
 loadplugins '\.(js|penta)$'
 group user
 map -count -modes=n,v j <count><C-d>
 map -count -modes=n,v k <count><C-u>
 map -modes=n,v <C-y> -ex :y buffer.title + "\n" + buffer.URL
-map J <down>
-map K <up>
+map -count -modes=n,v J <count><Down>
+map -count -modes=n,v K <count><Up>
+map -count -modes=n,v <C-f> <count>g;b
+map -count -modes=n,v <C-t> <count>:tabopen!<Space>
 set hintkeys=aioegslntv
 set hlfind
-" open multiple hints in background tabs
-map <c-f> g;b
-" note space in the end.
-map <c-t> :tabopen! 
+
 " vim: set ft=pentadactyl:
