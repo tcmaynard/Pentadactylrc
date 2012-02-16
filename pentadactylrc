@@ -9,6 +9,8 @@ map -count -modes=n,v J <count><Down>
 map -count -modes=n,v K <count><Up>
 map -count -modes=n,v <C-f> <count>g;b
 map -count -modes=n,v <C-t> <count>:tabopen!<Space>
+" Yank selected text to clipboard
+map -modes=n Y <yank-selection>
 set hintkeys=aioegslntv
 set hlfind
 
