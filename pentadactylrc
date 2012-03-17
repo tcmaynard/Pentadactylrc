@@ -34,4 +34,13 @@ set hintkeys=aioegslntv
 " Same as vim; highlight search results
 set hlfind
 
+" Yank (copy) to default clipboard with Y
+" Will not yank to default clipboard by default.
+" See:
+"     Issue 719 - dactyl - Copy with 'Y' is not pasted - A Vim-like five-fingered
+"     interface for Firefox and other XULRunner-based apps. - Google Project Hosting
+"     https://code.google.com/p/dactyl/issues/detail?id=719#c10
+js editor.defaultRegister="+"
+
+
 " vim: set ft=pentadactyl:
