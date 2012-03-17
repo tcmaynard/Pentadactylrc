@@ -2,15 +2,32 @@
 
 loadplugins '\.(js|penta)$'
 group user
-map -count -modes=n,v j <count><C-d>
-map -count -modes=n,v k <count><C-u>
-map -modes=n,v <C-y> -ex :y buffer.title + "\n" + buffer.URL
-map -count -modes=n,v J <count><Down>
-map -count -modes=n,v K <count><Up>
-map -count -modes=n,v <C-f> <count>g;b
-map -count -modes=n,v <C-t> <count>:tabopen!<Space>
-" Yank selected text to clipboard
-map -modes=n Y <yank-selection>
+
+" Mappings
+    " Go down half a page with j
+    map -count -modes=n,v j <count><C-d>
+
+    " Go up half a page with k
+    map -count -modes=n,v k <count><C-u>
+
+    " Yank page title and URL with <c-y>
+    map -modes=n,v <C-y> -ex :y buffer.title + "\n" + buffer.URL
+
+    " Go down a single line with j
+    map -count -modes=n,v J <count><Down>
+
+    " Go up a single line with k
+    map -count -modes=n,v K <count><Up>
+
+    " Enter hint mode where all hints are opened in background tabs
+    map -count -modes=n,v <C-f> <count>g;b
+
+    " Open prompt whose result will be opened in a background tab
+    map -count -modes=n,v <C-t> <count>:tabopen!<Space>
+
+    " Yank selected text to clipboard
+    map -modes=n Y <yank-selection>
+
 set hintkeys=aioegslntv
 set hlfind
 
