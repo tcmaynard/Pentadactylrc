@@ -28,7 +28,10 @@ group user
     " Yank selected text to clipboard
     map -modes=n Y <yank-selection>
 
+" Set hintkeys according to my home row in my keyboard layout
 set hintkeys=aioegslntv
+
+" Same as vim; highlight search results
 set hlfind
 
 " vim: set ft=pentadactyl:
